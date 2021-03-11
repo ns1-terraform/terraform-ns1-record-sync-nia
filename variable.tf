@@ -1,7 +1,7 @@
 variable "default_zone" {
   description = "The default zone when the services does not come with zone in metadata"
   type        = string
-  default     = "nia.hashcorp"
+  default     = "nia.hashicorp"
 }
 
 variable "apikey" {

@@ -82,7 +82,7 @@ driver "terraform" {
 task {
  name           = "ns1-task"
  description    = "Create/delete/update DNS zones and records"
- source         = "github.com:ns1-terraform/terraform-ns1-record-sync-nia"
+ source         = "github.com/ns1-terraform/terraform-ns1-record-sync-nia"
  services       = ["web", "api"]
  variable_files = ["/variable/file/with/api/key/terraform.tfvars"]
 }
