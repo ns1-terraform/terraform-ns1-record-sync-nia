@@ -21,6 +21,12 @@ variable "endpoint" {
   default     = "https://api.nsone.net/v1/"
 }
 
+variable "ignore_ssl" {
+  description = "(Optional) This normally does not need to be set."
+  type        = bool
+  default     = false
+}
+
 variable "services" {
   description = "Consul services monitored by Consul NIA"
   type = map(
