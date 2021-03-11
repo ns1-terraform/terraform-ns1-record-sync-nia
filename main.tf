@@ -2,6 +2,7 @@ terraform {
   required_providers {
     ns1 = {
       source = "ns1-terraform/ns1"
+      version = ">= 1.9.3"
     }
   }
   required_version = ">= 0.13"
@@ -10,6 +11,8 @@ terraform {
 provider "ns1" {
    apikey = var.apikey
    rate_limit_parallelism = var.rate_limit_parallelism
+   endpoint = var.endpoint
+   ignore_ssl = var.ignore_ssl
 }
 
 resource "ns1_zone" "nia_zones" {
